@@ -1,7 +1,11 @@
 body {
   font-size: 16px;
-  color: #000;
+  color: #333333;
   font-family: 'Oxygen', sans-serif;
+}
+
+* {
+	box-sizing: border-box;
 }
 
 /** HEADER **/
@@ -52,22 +56,77 @@ body {
 #page-title {
 	margin-top: 0;
 	margin-bottom:20px;
-	color: black;
-	text-shadow: 1px 1px 1px #222;
+	font-weight: bold;
+	color: #333333;
+	text-shadow: 1px 2px 2px  #ff6666;
 }
 
 .content {
-	background-color: #ccfff5;
-	background: #ccfff5;
-	height: 1500px;
+	float: right;
+	background-color: #99ffeb;
+	box-shadow: 5px 5px 5px #b3fff0;
 	margin-bottom: 15px;
 	padding: 15px;
+	height: 700px;
 }
 
 .section-title {
-	font-size: 1.3em;
+	font-size: 1.4em;
 	font-weight: bold;
+	color: #333333;
+	text-shadow: 1px 1px 1px #737373;
 	margin-bottom: 15px;
 	margin-top: 15px;
 }
+
+.section-content {
+	padding-bottom: 20px;
+}
+
+.back-to-top {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 20px;
+	font-weight: bold;
+	color: #333333;
+	text-shadow: 1px 1px 1px #737373;
+}
+.back-to-top a:hover, .back-to-top a:focus {
+	text-decoration: none;
+	color: #333333;
+}
 /* END CONTENT */
+
+/********** Desktop **********/
+@media (min-width: 992px) {
+	.col-lg-4 {
+		float: left;
+		width: 33.33%;
+	}
+}
+
+/********** Tablet **********/
+ @media (max-width: 991px) and (min-width: 768px) {
+ 	.col-md-6, .col-md-12 {
+ 		float: left;
+ 	}
+ 	.col-md-6 {
+ 		width: 50%;
+ 	}
+ 	.col-md-12 {
+ 		width: 100%;
+ 	}
+ }
+
+/* @media (max-width: 767px) {
+ 	.col-xs-12 {
+ 		float: left;
+ 		width: 100%;
+ 	}
+ }
+*/
+
+
